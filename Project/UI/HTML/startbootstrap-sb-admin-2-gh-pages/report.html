@@ -16,7 +16,7 @@
   <link
     href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
     rel="stylesheet">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <!-- Custom styles for this template-->
   <link href="sb-admin-2.css" rel="stylesheet">
   <link href="css/sb-admin-2.min.css" rel="stylesheet">
@@ -32,6 +32,31 @@
     table {
       border: 1px solid #000;
     }
+    .height {
+    min-height: 200px;
+}
+
+.icon {
+    font-size: 47px;
+    color: #5CB85C;
+}
+
+.iconbig {
+    font-size: 77px;
+    color: #5CB85C;
+}
+
+.table > tbody > tr > .emptyrow {
+    border-top: none;
+}
+
+.table > thead > tr > .emptyrow {
+    border-bottom: none;
+}
+
+.table > tbody > tr > .highrow {
+    border-top: 3px solid;
+}
   </style>
 </head>
 
@@ -379,7 +404,7 @@
           <div id="IC" class="">
             <div class="row">
               <div class="col-lg-12">
-                <h2>Claim Summary</h2>
+                <h2>Claim #xxxx Report</h2>
               </div>
               <br clear="all">
               <div class="col-lg-12">
@@ -939,24 +964,39 @@
                           <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven"
                             data-parent="#accordionExample">
                             <div class="card-body">
-                              <p>
-                                The insured vehicle was proceeding through, xxxxxxxx, on its way at the spot of
-                                accident, xxxxxxxxxxxxxxxx , Thereby sustained damages to the insured vehicle. Cause of
-                                accident appears to be genuine and tallying with the nature and extent of damages.
-                              </p>
-                              <br clear="all" />
+                                <p>
+                                    The insured vehicle was proceeding through, xxxxxxxx, on its way at the spot of
+                                    accident, xxxxxxxxxxxxxxxx , Thereby sustained damages to the insured vehicle. Cause of
+                                    accident appears to be genuine and tallying with the nature and extent of damages.
+                                  </p>
+                                  <br clear="all" />
+                            </div>
+                          </div>
+                        </div>
+                        <div class="card z-depth-0 bordered">
+                          <div class="card-header" id="headingEight">
+                            <h5 class="mb-0">
+                              <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                data-target="#collapseEight" aria-expanded="false" aria-controls="collapseEight">
+                                ASSESSMENT
+                              </button>
+                            </h5>
+                          </div>
+                          <div id="collapseEight" class="collapse" aria-labelledby="headingEight"
+                            data-parent="#accordionExample">
+                            <div class="card-body">
                               <div class="accordion" id="accordionExample1">
                                 <div class="card z-depth-0 bordered">
-                                  <div class="card-header" id="headingEight">
+                                  <div class="card-header" id="headingNine">
                                     <h5 class="mb-0">
                                       <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
-                                        data-target="#collapseEight" aria-expanded="false"
-                                        aria-controls="collapseEight">
+                                        data-target="#collapseNine" aria-expanded="false"
+                                        aria-controls="collapseNine">
                                         Parts Details
                                       </button>
                                     </h5>
                                   </div>
-                                  <div id="collapseEight" class="collapse" aria-labelledby="headingEight"
+                                  <div id="collapseNine" class="collapse" aria-labelledby="headingNine"
                                     data-parent="#accordionExample1">
                                     <div class="card-body">
                                       <table border="1">
@@ -1081,16 +1121,16 @@
                                   </div>
                                 </div>
                                 <div class="card z-depth-0 bordered">
-                                  <div class="card-header" id="headingNine">
+                                  <div class="card-header" id="headingTen">
                                     <h5 class="mb-0">
                                       <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
-                                        data-target="#collapseNine" aria-expanded="false"
-                                        aria-controls="collapseNine">
+                                        data-target="#collapseTen" aria-expanded="false"
+                                        aria-controls="collapseTen">
                                         Labour Charges
                                       </button>
                                     </h5>
                                   </div>
-                                  <div id="collapseNine" class="collapse" aria-labelledby="headingNine"
+                                  <div id="collapseTen" class="collapse" aria-labelledby="headingTen"
                                     data-parent="#accordionExample1">
                                     <div class="card-body">
                                       <table border="1">
@@ -1227,12 +1267,173 @@
                                     </div>
                                   </div>
                                 </div>
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-xs-12">
+                                            <div class="text-center">
+                                                <i class="fa fa-search-plus pull-left icon"></i>
+                                                <h2>Summary of ASSESSMENT</h2>
+                                            </div>
+                                            <hr>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h3 class="text-center"><strong>As per repairer's estimate</strong></h3>
+                                                </div>
+                                                <div class="panel-body">
+                                                    <div class="table-responsive">
+                                                        <table class="table table-condensed">
+                                                            <thead>
+                                                                <tr>
+                                                                    <td><strong>Item Name</strong></td>
+                                                                    <td class="text-center"><strong></strong></td>
+                                                                    <td class="text-center"><strong></strong></td>
+                                                                    <td class="text-right"><strong>Rate</strong></td>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>Total labour Charges</td>
+                                                                    <td class="text-center"></td>
+                                                                    <td class="text-center"></td>
+                                                                    <td class="text-right"><i class="fa fa-inr">xxxx</i></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Total cost of parts</td>
+                                                                    <td class="text-center"><input type="text" value="xxx" /></td>
+                                                                    <td class="text-center"></td>
+                                                                    <td class="text-right"><i class="fa fa-inr">xxxx</i></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Additional estimate of parts</td>
+                                                                    <td class="text-center"></td>
+                                                                    <td class="text-center"></td>
+                                                                    <td class="text-right"><i class="fa fa-inr">xxxx</i></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Towing charges</td>
+                                                                    <td class="text-center"></td>
+                                                                    <td class="text-center"></td>
+                                                                    <td class="text-right"><i class="fa fa-inr">xxxx</i></td>
+                                                                </tr>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="panel panel-default">
+                                                <div class="panel-heading">
+                                                    <h3 class="text-center"><strong>Assesment</strong></h3>
+                                                </div>
+                                                <div class="panel-body">
+                                                    <div class="table-responsive">
+                                                        <table class="table table-condensed">
+                                                            <thead>
+                                                                <tr>
+                                                                    <td><strong>Item Name</strong></td>
+                                                                    <td class="text-center"><strong></strong></td>
+                                                                    <td class="text-center"><strong></strong></td>
+                                                                    <td class="text-right"><strong>Rate</strong></td>
+                                                                </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                                <tr>
+                                                                    <td>Total labour Charges</td>
+                                                                    <td class="text-center"></td>
+                                                                    <td class="text-center"></td>
+                                                                    <td class="text-right"><i class="fa fa-inr">xxxx</i></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>GST % on labaour</td>
+                                                                    <td class="text-center"><input type="text" value="xxx" /></td>
+                                                                    <td class="text-center"></td>
+                                                                    <td class="text-right"><i class="fa fa-inr">xxxx</i></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Total cost of spare parts</td>
+                                                                    <td class="text-center"></td>
+                                                                    <td class="text-center"></td>
+                                                                    <td class="text-right"><i class="fa fa-inr">xxxx</i></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Less compulsory excess</td>
+                                                                    <td class="text-center"></td>
+                                                                    <td class="text-center"></td>
+                                                                    <td class="text-right"><i class="fa fa-inr">xxxx</i></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Less salvage value</td>
+                                                                    <td class="text-center"></td>
+                                                                    <td class="text-center"></td>
+                                                                    <td class="text-right"><i class="fa fa-inr">xxxx</i></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td>Towing charges</td>
+                                                                    <td class="text-center"></td>
+                                                                    <td class="text-center"></td>
+                                                                    <td class="text-right"><i class="fa fa-inr">xxxx</i></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="highrow"></td>
+                                                                    <td class="highrow"></td>
+                                                                    <td class="highrow"><strong>Subtotal</strong></td>
+                                                                    <td class="highrow text-right"><i class="fa fa-inr">xxxx</i></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="emptyrow"></td>
+                                                                    <td class="emptyrow"></td>
+                                                                    <td class="emptyrow text"><strong>Extra  </strong><input type="text" value="xxx" /></td>
+                                                                    <td class="emptyrow text-right"><i class="fa fa-inr">xxxx</i></td>
+                                                                </tr>
+                                                                <tr>
+                                                                    <td class="emptyrow"><i class="fa fa-barcode iconbig"></i></td>
+                                                                    <td class="emptyrow"></td>
+                                                                    <td class="emptyrow text"><strong>Net Payable Loss(round off)</strong></td>
+                                                                    <td class="emptyrow text-right"><i class="fa fa-inr">xxxx</i></td>
+                                                                </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                               </div>
                               <br clear="all" />
                             </div>
                           </div>
                         </div>
                       </div>
+                       <div class="col-lg-12 mb-4">
+                        <!-- Project Card Example -->
+                       <div class="card shadow mb-4">
+                    <div class="card-header py-3">
+                    <h6 class="m-0 font-weight-bold text-primary">Remarks</h6>
+                    </div>
+                    <div class="card-body" style="background-color: lightgreen;">
+                      <textarea class="form-control"  rows="5"></textarea>
+                  </div>
+                      </div>
+                        </div>
+
+                        <div class="col-sm-12 col-lg-3">
+                            <div class="form-group">
+                              <label class="form-control-label">Select Format</label>
+                              <select class="form-control">
+                                <option value="">Select</option>
+                                <option value="1">National</option>
+                                <option value="2">Oriental</option>
+                              </select>
+                            </div>
+                          </div>
+                          <div class="col-lg-12">
+                            <div class="form-group">
+                              <input type="submit" value="Generate Report" class="btn btn-submit btn-primary"></input>
+                            </div>
+                          </div>
                     </div>
                   </div>
                 </div>
