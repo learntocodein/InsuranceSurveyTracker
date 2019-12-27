@@ -32,7 +32,7 @@ var ctx = document.getElementById("myBarChart");
 var myBarChart = new Chart(ctx, {
   type: 'bar',
   data: {
-    labels: ["National", "New India", "Oriental", "United India", "Private"],
+    labels: ["National", "New India", "Oriental", "United India", "Others"],
     datasets: [{
       label: "Revenue",
       backgroundColor: "#4e73df",

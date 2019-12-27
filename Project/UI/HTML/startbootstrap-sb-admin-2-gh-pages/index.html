@@ -503,41 +503,50 @@
 
           <!-- Content Row -->
           <div class="row">
-            
-          <div class="col-xl-12 col-lg-7">  
-            <div class="card shadow mb-12">
-              <div class="card-header py-3">
-                <h6 class="m-0 font-weight-bold text-primary">Company Annual wise earning</h6>
-              </div>
-              <div class="card-body">
-                <div class="chart-bar">
-                  <canvas id="myBarChart"></canvas>
+
+            <div class="col-xl-8 col-lg-7">
+              <div class="card shadow mb-12">
+                <div class="card-header py-3">
+                  <h6 class="m-0 font-weight-bold text-primary">Company Annual wise earning</h6>
                 </div>
-                <hr>
-                Styling for the bar chart can be found in the <code>/js/demo/chart-bar-demo.js</code> file.
+                <div class="card-body">
+                  <div class="chart-bar">
+                    <canvas id="myBarChart"></canvas>
+                  </div>
+                  <hr>
+                </div>
               </div>
             </div>
-           </div>
 
+
+            <br>
             <!-- Content Column -->
-            <div class="col-lg-12 mb-4">
+            <div class="col-lg-4 mb-4" >
 
               <!-- Project Card Example -->
-              <div class="card shadow mb-4">
+              <div class="card shadow mb-4" style="min-height:450px">
                 <div class="card-header py-3">
                   <h6 class="m-0 font-weight-bold text-primary">Notes</h6>
                 </div>
-                <div class="card-body" style="background-color: lightgreen;">
-                  <textarea class="form-control" rows="15"></textarea>
+                <div class="card-body" style="background-color: yellow;">
+                  <div class="col-lg-12"><textarea class="form-control" rows="1" placeholder="type here to add note..."></textarea></div>
+                  <div class="col-lg-12" style="border: 1px solid #fff; padding:10px; margin:10px;">
+                      <p>Note1.....</p>
+                    <hr />
+                      <p>Note2............</p>
+                    <hr />
+                      <p>Note2................</p>
+                    <hr />
+                  </div>
                 </div>
               </div>
-
-             
-
             </div>
 
-           
+
           </div>
+
+
+
 
         </div>
         <!-- /.container-fluid -->
